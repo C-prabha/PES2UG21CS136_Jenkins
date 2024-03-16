@@ -8,14 +8,14 @@ pipeline {
         // }
         stage('Build') {
             steps {
-                build 'PES2UG21CS134-1'
+                build 'PES2UG21CS136-1'
                 sh 'g++ hello.cpp -o output'
             }
         }
         stage('Test') {
             steps {
                 // Assuming you have test steps here. Adjust accordingly.
-                sh './output'
+                
             }
         }
         stage('Deploy') {
