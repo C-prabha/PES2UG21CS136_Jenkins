@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Assuming you have test steps here. Adjust accordingly.
-                
+                sh '/output'
             }
         }
         stage('Deploy') {
